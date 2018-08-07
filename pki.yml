@@ -1,0 +1,37 @@
+subject: &subject
+  organization:
+  - "Acme Inc."
+  organizationalUnit:
+  - "IT"
+  locality:
+  - "Agloe"
+  country:
+  - "US"
+  province:
+  - "New York"
+certs:
+- name: "CA"
+  commonName: "CA"
+  isCA: true
+  expire: "720h"
+  subject: *subject
+- name: "Admins Intermediate CA"
+  commonName: "Admins Intermediate CA"
+  signer: "CA"
+  isCA: true
+  expire: "720h"
+  subject: *subject
+- name: "localhost"
+  commonName: "localhost"
+  dnsNames:
+  - "localhost"
+  signer: "Admins Intermediate CA"
+  expire: "720h"
+  subject: *subject
+- name: "bob@acme.com"
+  commonName: "bob@acme.com"
+  emailAddresses:
+  - "bob@acme.com"
+  signer: "Admins Intermediate CA"
+  expire: "720h"
+  subject: *subject

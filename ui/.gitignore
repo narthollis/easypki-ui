@@ -1,0 +1,28 @@
+.idea/
+
+# Build Output
+dist/
+
+# Test anc Coverate ouput
+reports/
+coverage/
+
+# Dependency directories
+node_modules
+jspm_packages
+
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+npm-debug.log*
+yarn-error.log*
+.DS_Store
+
+.vscode/
+
+# AWCache
+.awcache

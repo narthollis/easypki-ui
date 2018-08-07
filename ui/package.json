@@ -1,0 +1,39 @@
+{
+  "name": "easypki-ui",
+  "version": "1.0.0",
+  "description": "Web UI for github.com/google/easypki",
+  "main": "src/index.ts",
+  "repository": "https://github.com/narthollis/easypki-ui/",
+  "author": "Nicholas Steicke",
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "cross-env TS_NODE_PROJECT=\"tsconfig.node.json\" webpack-dev-server --mode=development"
+  },
+  "devDependencies": {
+    "@types/core-js": "^2.5.0",
+    "@types/fork-ts-checker-webpack-plugin": "^0.4.1",
+    "@types/html-webpack-plugin": "^3.2.0",
+    "@types/node": "^10.5.6",
+    "@types/react": "^16.4.7",
+    "@types/react-dom": "^16.0.6",
+    "@types/webpack": "^4.4.9",
+    "cross-env": "^5.2.0",
+    "fork-ts-checker-webpack-plugin": "^0.4.4",
+    "html-webpack-plugin": "^3.2.0",
+    "ts-node": "^7.0.0",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "typescript": "^3.0.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "dependencies": {
+    "core-js": "^2.5.7",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-placeholder": "^3.0.1",
+    "styled-components": "^3.4.1",
+    "ts-loader": "^4.4.2",
+    "whatwg-fetch": "^2.0.4"
+  }
+}
